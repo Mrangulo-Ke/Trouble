@@ -31,11 +31,12 @@
     <div class="form-group">
     	<div class="col-sm-offset-2 col-sm-10">
 			<%= f.submit(@user.new_record? ? "Signup" : "Update account", class: 'btn btn-primary btn-lg') %> 
+			<p>Do have an account already? <%= link_to "[ Login! ]", login_path %></p>
         </div>
     </div>
-		<%end%>
+	<%end%>
     <div class="col-xs-4 col-xs-offset-4">
-    	[ <%= link_to "Cancel request and return to articles listing", articles_path %> ]
+    	[ <%= link_to "Cancel request & return to articles listing", articles_path %> ]
     </div>     
         
     </div>
