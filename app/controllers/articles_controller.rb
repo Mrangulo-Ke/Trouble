@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
         render 'new'
       end
     end
-
+  
     def update
       if @article.update(article_params)
         flash[:success] = "Article was successfully updated"
